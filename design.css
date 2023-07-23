@@ -1,0 +1,206 @@
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: .8;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #ef685c;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 45px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #1f4282;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 1px solid #1f4282;
+}
+
+.button1:hover {
+  background-color: #1f4282;
+  color: white;
+}
+
+.centertext {
+  text-align: center;
+  border: 3px solid green;
+}
+
+.p1 {
+  font-family: "Arial Black", "Bahnschrift SemiBold", serif;
+}
+
+.p2 {
+  font-family: "Arial Black", "Bahnschrift SemiBold", serif;
+  font-size: 14px;
+}
+
+.p3 {
+  font-family: "Arial Black", "Bahnschrift SemiBold", serif;
+  font-size: 20px;
+}
+
+.p4 {
+  font-family: "Candara", "Bahnschrift SemiBold";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.p5 {
+  font-family: "Candara", "Bahnschrift SemiBold", serif;
+  font-size: 12px;
+  text-align: justify;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #ef685c;
+  color: white;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("background.png");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color:  #f2f2f2; /* Black w/opacity/see-through */
+  color: black;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 45px;
+}
